@@ -7,9 +7,3 @@ Feature: Search Scenarios
     When I search for "Reddit"
     And I view the first result
     Then I see the Reddit homepage
-    
-   Scenario: 02. Search and select a result
-   	Given I am on the search page
-   	When I search for "Youtube"
-   	And I view the first result
-   	Then I see the Youtube homepage

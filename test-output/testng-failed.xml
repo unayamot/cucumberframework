@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [Product Test Suite]" parallel="tests">
+  <test name="Product Acceptance Tests(failed)" parallel="tests">
+    <groups>
+      <run>
+        <include name="cucumber"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestRunner">
+        <methods>
+          <include name="feature"/>
+          <include name="setupClass"/>
+        </methods>
+      </class> <!-- TestRunner -->
+    </classes>
+  </test> <!-- Product Acceptance Tests(failed) -->
+</suite> <!-- Failed suite [Product Test Suite] -->
